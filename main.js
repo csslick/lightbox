@@ -27,7 +27,7 @@ $(function(){
 	  for( var i = 0; i < $imgs.length; i++){
 	    $imgs.eq(i).removeAttr('class');
 	  }
-	  $imgs.eq(val).attr('class', 'active');
+	  $imgs.eq(val - 1).attr('class', 'active');
 	}	
 
 	// 이미지 목록 click 이벤트 | 라이트 박스 열기
