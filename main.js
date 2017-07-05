@@ -11,7 +11,7 @@ $(function(){
 		$block.addClass('active');
 		
 		change_img(num);
-		$indicator.eq(num).focus();	
+		$indicator.eq(num - 1).focus();	
 	}
 
 	// 라이트 박스 종료
