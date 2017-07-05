@@ -32,7 +32,7 @@ $(function(){
 
 	// 이미지 목록 click 이벤트 | 라이트 박스 열기
 	$('img.thumb').click(function(){
-		var img_num = $(this).index();
+		var img_num = $(this).index() - 1;
 		console.log(img_num);
 		lightbox_open(img_num);
 	});
@@ -45,6 +45,7 @@ $(function(){
 	// 인디케이터 클릭시 click 이벤트 | 라이트 박스 이미지 변경
 	$indicator.click(function(){
 		var img_num = $(this).index();
+		console.log(img_num);
 		change_img(img_num);
 	});
 
