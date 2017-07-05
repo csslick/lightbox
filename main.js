@@ -9,9 +9,8 @@ $(function(){
 	function lightbox_open(num){
 		$lightbox.addClass('active');
 		$block.addClass('active');
-		
 		change_img(num);
-		$indicator.eq(num - 1).focus();	
+		$indicator.eq(num).focus();	
 	}
 
 	// 라이트 박스 종료
